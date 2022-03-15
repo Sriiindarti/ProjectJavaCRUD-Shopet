@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5cd0ed05-80a7-44b8-bfaf-21195cce44c2">
+	<property name="ireport.zoom" value="2.5937424601000068"/>
+	<property name="ireport.x" value="74"/>
+	<property name="ireport.y" value="35"/>
+	<queryString language="SQL">
+		<![CDATA[select*from customer]]>
+	</queryString>
+	<field name="IDCustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NameCust" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Addresss" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TelephoneeNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="197" y="0" width="305" height="79" uuid="09d9766c-643c-4c5a-b45d-7d306c76eb72"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER REPORTS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="122" y="8" width="64" height="64" uuid="1cb0218a-418d-4e26-bb2f-82157ac1ca6f"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\CUST.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="8" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="0" width="138" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="3fe4d6f8-a0b8-491f-bcf1-5495a6060e6e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<text><![CDATA[IDCustomer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="139" y="0" width="138" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="6baa1279-e904-47cb-8b04-f0255db6318b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<text><![CDATA[NameCust]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="277" y="0" width="138" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="095917e6-39da-40ba-89b6-1835b9621782"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<text><![CDATA[Addresss]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="415" y="0" width="138" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="6c275e91-875f-4448-8fa6-6a5126b1c76b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<text><![CDATA[TelephoneeNumber]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="1" y="0" width="138" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="1a0fd640-1faa-4c8d-817b-cea1c318f474"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDCustomer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="139" y="0" width="138" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="5d9d3caf-96f6-4f2b-bd3e-1280c10f142a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NameCust}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="277" y="0" width="138" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="9eb6db90-5418-468a-a241-8ce1bb2d7324"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Addresss}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="415" y="0" width="138" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="06976b27-e7d6-46cb-8164-41c005480d3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TelephoneeNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="0" width="552" height="1" uuid="d792d8ec-9691-47eb-8fce-5aef12912d0b"/>
+			</line>
+			<textField>
+				<reportElement x="6" y="11" width="10" height="15" uuid="5c2d1078-b9d1-49e8-8961-c1dbd2665a11"/>
+				<textElement>
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="451" y="18" width="100" height="15" uuid="64067191-eecc-4cf4-be44-f64ffd2d0e60"/>
+				<textElement textAlignment="Right" rotation="None">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="451" y="2" width="100" height="15" uuid="bc520398-2cfb-45ab-8711-36c6d27cc04b"/>
+				<textElement textAlignment="Right" rotation="None">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<text><![CDATA[PRINT DATE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="15" y="7" width="30" height="22" uuid="ebed67e5-3cc5-47c9-9516-592762d2285c"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\ICONshopet.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

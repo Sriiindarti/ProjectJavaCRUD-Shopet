@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7d6fc0fa-749a-422e-b13b-2c00b566f869">
+	<property name="ireport.zoom" value="1.464100000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from relasitrans]]>
+	</queryString>
+	<field name="IDTransaction" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IDEmployee" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NameEmp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IDCustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NameCust" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TelephoneeNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Addresss" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IDProduct" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Product" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SellingPrice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="QTY" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SubTotal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="169" y="0" width="533" height="79" uuid="0fc8a87f-c3ea-4236-b58e-1960b2eb3a6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTS DETAIL TRANSACTION SHOPET]]></text>
+			</staticText>
+			<image>
+				<reportElement x="98" y="16" width="70" height="60" uuid="ca25f07e-d906-48fd-af65-544d7b532e0e"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\ICONshopet.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="8" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="55" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="08368b50-6c3c-4825-891d-7ec62d71595e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDTrans]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="125" y="0" width="73" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="4a3a743b-6681-4562-be8b-93d05506d6dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NameEmp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="199" y="0" width="69" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="07af5b73-999b-4012-8af3-8adaafb49c83"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDCustomer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="269" y="0" width="73" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="f0f7b63f-a975-4d6e-aea4-4f4ee55efd03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NameCust]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="343" y="0" width="69" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="b9f7478b-9056-4ca7-b876-f5aa435334b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="413" y="0" width="69" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="5a8997ce-7c09-4097-8125-bb9553f1e093"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Addresss]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="483" y="0" width="60" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="22917286-ef25-4693-ade0-786c8817a326"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDProduct]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="544" y="0" width="96" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="52dc94e3-3f38-4348-a980-66a772dd6a74"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="641" y="0" width="55" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="6e3570a4-8ed1-421b-a43d-9360761eda46"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="697" y="0" width="40" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="123183b4-2942-4f3a-9207-96011319f99f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="738" y="0" width="64" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="d43e827a-5f61-4e93-8f15-a144820deb47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SubTotal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="56" y="0" width="68" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="ff89f2d9-448e-4883-9881-0fdb86ed9080"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDEmp]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="55" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="93a2605f-f692-49de-bb47-5d8b19e6f1ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDTransaction}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="56" y="0" width="68" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="56734dbf-81d4-4e2a-8c81-4734bce357e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDEmployee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="125" y="0" width="73" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="3198079d-1752-4cdc-b0f6-a95a2ade77bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NameEmp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="199" y="0" width="69" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="a1198ad0-7ce0-4821-9434-0b3a7aa8769d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDCustomer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="269" y="0" width="73" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="2e0634ad-c116-4149-a32b-80f12a7b453f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NameCust}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="343" y="0" width="69" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="c84d7c2e-174c-4811-aab8-190d4b8c9a6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TelephoneeNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="413" y="0" width="69" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="8329b5d4-a424-456b-8dc9-f9e2eb4c1670"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Addresss}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="483" y="0" width="60" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="fea2bf23-2e18-490a-8eb8-659d0a937924"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDProduct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="544" y="0" width="96" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="2aca50b7-2ff5-4eb8-8b00-212c2d90b69a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="641" y="0" width="55" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="82d912ac-39f1-416e-8d32-fc0050dee9c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SellingPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="697" y="0" width="40" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="dfbce3d2-4d68-457c-b95d-745229770d80"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{QTY}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="738" y="0" width="64" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="73de4b0f-f881-404c-bb44-6eb28e4d11fb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SubTotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="44" width="802" height="1" uuid="4546152d-90ba-47eb-8da8-53a362aff14d"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="6" width="10" height="20" uuid="c08a14de-3892-43cf-92f1-2260e60e4ed1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="739" y="1" width="63" height="15" uuid="c9cf33d7-fed8-48b2-8c71-0d75fc3074bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Print Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="702" y="16" width="100" height="15" uuid="813074d5-1338-4891-9096-a895007b2012"/>
+				<textElement>
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date())]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center">
+				<reportElement x="9" y="6" width="35" height="20" uuid="07281b44-9d2a-4927-8224-ab6eb98004b6"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\ICONshopet.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

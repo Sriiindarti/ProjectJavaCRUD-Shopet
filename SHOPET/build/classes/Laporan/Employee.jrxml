@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a28ee4ad-5eeb-4c38-9423-4786205e0237">
+	<property name="ireport.zoom" value="7.40024994425818"/>
+	<property name="ireport.x" value="1074"/>
+	<property name="ireport.y" value="800"/>
+	<queryString language="SQL">
+		<![CDATA[select*from employee]]>
+	</queryString>
+	<field name="IDEmployee" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NameEmp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TelephoneNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sallary" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="203" y="0" width="336" height="79" uuid="d17c5215-40d3-4fd2-8253-91e36447e35f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMPLOYEE REPORT]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="130" y="8" width="69" height="58" uuid="cb78b405-45c2-487c-a8ca-77c79866142f"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\PRODUK 64.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="6" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="89" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="a190119c-5fa0-431e-a04e-a53c1cb3f422"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDEmployee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="90" y="0" width="92" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="4136f183-f1a3-4eda-8386-9f5783b51b90"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NameEmp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="183" y="0" width="92" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="07adad47-92d5-4176-906d-0fd09602540a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="93" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="8deda713-e30d-4607-982b-35eb792fe73f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TelephoneNumber]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="370" y="0" width="92" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="c36d5909-f1b7-4f60-8b33-3b6dc07ea087"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sallary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="463" y="0" width="92" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="3ab11f83-68cb-4738-a7f2-8e02d3ca15b1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="89" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="84efd967-ae6c-4558-bad2-758446d8e719"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDEmployee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="90" y="0" width="92" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="2cfd7900-218d-4818-a129-597eea5fe3ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NameEmp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="183" y="0" width="92" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="11ba2cfa-d5bd-4573-b48b-1dee1b07d77c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="276" y="0" width="93" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="bbf59212-2ef8-4d0f-ac39-5ba0971f375c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TelephoneNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="370" y="0" width="92" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="f11c742c-7e66-4e5f-b067-71091094435b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Sallary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="463" y="0" width="92" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="ce3eac4b-b2de-4f9c-b120-634d5ade9872"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="44" width="555" height="1" uuid="bb3945c9-f5eb-4edb-9db5-90d8aaad8b74"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="31" splitType="Stretch">
+			<textField pattern="MMM-yy">
+				<reportElement x="489" y="15" width="63" height="15" uuid="5c6bbe95-f6fc-4012-91a3-d3132c630560"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="489" y="1" width="63" height="15" uuid="323379a7-1602-46d3-9c6e-5b858b9978d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Print Year]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="5" y="6" width="10" height="20" uuid="3649e73a-1677-4474-9a81-2c073dbd6d7f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="16" y="5" width="35" height="20" uuid="aca119ec-76bd-4aaa-9c57-c08ae20674c1"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\ICONshopet.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

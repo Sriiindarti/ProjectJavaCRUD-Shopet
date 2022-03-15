@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="04e2d8b7-683a-4fe1-8f92-8163b12109d6">
+	<property name="ireport.zoom" value="2.5937424601000094"/>
+	<property name="ireport.x" value="68"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from product]]>
+	</queryString>
+	<field name="IDProduct" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Product" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PurchasePrice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SellingPrice" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stock" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="0" width="381" height="79" uuid="0beb2de8-475a-48ed-92a1-5cd84550219d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" size="30" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRODUCT REPORTS]]></text>
+			</staticText>
+			<image>
+				<reportElement x="121" y="10" width="74" height="59" uuid="99100297-5402-4874-bcb0-ae2355ce0078"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\PRODUK 64.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="8" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="111" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="8d520c7e-d412-4eab-b62e-37c330a21ef5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IDProduct]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="112" y="0" width="140" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="18f58306-5494-4d50-8d01-631f17bb960c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="253" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="56e331b1-fcae-412c-ab30-32d89b4c74c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PurchasePrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="354" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="caf8e760-9f85-42f4-8591-0084ee641159"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SellingPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="455" y="0" width="100" height="20" forecolor="#FFFFFF" backcolor="#7C3A43" uuid="890bf3c8-48ac-4938-94e2-13e17bdca96d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Stock]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="0" width="111" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="fe217974-6b2b-44b9-90cb-eb9e5bdb9099"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{IDProduct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="112" y="0" width="140" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="75509dc5-22f8-4538-8639-6d1ebd204348"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Product}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="253" y="0" width="100" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="bf6fabee-fd5d-41e2-93fb-5ff3e0bdc9e9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PurchasePrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="354" y="0" width="100" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="f2b6d83e-877d-4d2e-8c9e-682bfbceae10"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SellingPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="455" y="0" width="100" height="20" forecolor="#5B282F" backcolor="#EBE4DE" uuid="7d5062de-4f1c-4c68-8b26-0de049c722a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Stock}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="33" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="32" width="555" height="1" uuid="8a131d55-7b0e-4f54-ae9a-08cba780517f"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="6" width="10" height="20" uuid="56fe81b0-44ff-4436-9a88-da0cd5fd91b4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="498" y="0" width="56" height="16" uuid="09590f70-8148-4357-b18d-c5cc9c82409b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Print Date]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="454" y="17" width="100" height="16" uuid="d4cbc6d4-1257-427d-a7d9-d56894d4991f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tw Cen MT" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(new Date())]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="11" y="6" width="35" height="20" uuid="06b5feb2-3232-4212-9e78-422753b00892"/>
+				<imageExpression><![CDATA["C:\\Users\\Indri\\Desktop\\ICONshopet.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
